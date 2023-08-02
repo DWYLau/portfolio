@@ -98,9 +98,8 @@ span {
 
 .home-img img {
   border-radius: 50%;
-  height: 45vh;
-  width: 20vw;
-  margin: 2rem;
+  height: 50vh;
+  width: 23vw;
 }
 
 .home-content p {
@@ -179,4 +178,59 @@ span {
   font-size: 2rem;
   margin: 1.5rem 0 2rem;
   width: 40vw;
+}
+
+.services h2 {
+  margin-bottom: 5rem;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.services-container .services-box {
+  flex: 1 1 30rem;
+  background: var(--second-bg-color);
+  padding: 3rem 2rem 4rem;
+  border: 0.2rem solid var(--bg-color);
+  border-radius: 2rem;
+  text-align: center;
+  transition: 0.5s ease;
+  min-height: 60vh;
+}
+
+.services-container .services-box:hover {
+  border-color: var(--main-color);
+  transform: scale(1.02);
+}
+
+.services-box i {
+  font-size: 7rem;
+  color: var(--main-color);
+}
+
+.services-box h3 {
+  font-size: 4rem;
+}
+
+.services-box p {
+  font-size: 2rem;
+  margin: 1rem 0 1rem;
+}
+
+.services-box .image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  gap: 1.5rem;
+}
+
+.image-container img {
+  height: 5rem;
+  width: 5rem;
 }
