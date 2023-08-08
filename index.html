@@ -28,7 +28,7 @@
     <section class="home" id="home">
       <div class="home-content">
         <h3>Welcome to</h3>
-        <h1>Derek Lau</h1>
+        <h1>Derek <span>Lau</span></h1>
         <h3>I'm a <span>Frontend Developer</span></h3>
         <p>Aspiring frontend developer located in Yokohama, Japan.</p>
         <p>Currently learning:</p>
@@ -58,7 +58,7 @@
 
       <div class="about-content">
         <h2 class="heading">About <span>Me</span></h2>
-        <h3>Frontend Developer</h3>
+        <h3>Frontend <span>Developer</span></h3>
         <p>
           Highly committed, motivated and professional individual seeking
           employment in web design.
@@ -68,7 +68,7 @@
           Please take your time to look at my portfolio and contact me if you
           are interested in working with me. Thank you!
         </p>
-        <a href="#" class="button">Services</a>
+        <a href="#services" class="button">Services</a>
       </div>
     </section>
 
@@ -84,30 +84,15 @@
           <p>JavaScript</p>
           <p>Ruby</p>
           <div class="image-container">
+            <img width="50" height="50" src="images/html5.svg" alt="html5" />
+            <img width="50" height="50" src="images/css3.svg" alt="css3" />
             <img
               width="50"
               height="50"
-              src="https://img.icons8.com/ios-filled/50/html-5--v1.png"
-              alt="html-5--v1"
-            />
-            <img
-              width="50"
-              height="50"
-              src="https://img.icons8.com/ios-filled/50/css3.png"
-              alt="css3"
-            />
-            <img
-              width="50"
-              height="50"
-              src="https://img.icons8.com/ios-filled/50/javascript.png"
+              src="images/javascript.svg"
               alt="javascript"
             />
-            <img
-              width="50"
-              height="50"
-              src="https://img.icons8.com/ios-filled/50/ruby-programming-language.png"
-              alt="ruby-programming-language"
-            />
+            <img width="50" height="50" src="images/ruby.svg" alt="ruby" />
           </div>
         </div>
 
@@ -120,29 +105,19 @@
           <p>UI Interaction</p>
           <div class="image-container">
             <img
-              width="53"
-              height="53"
-              src="https://img.icons8.com/external-vectorslab-glyph-vectorslab/53/external-Responsive-Design-web-and-seo-vectorslab-glyph-vectorslab-3.png"
-              alt="external-Responsive-Design-web-and-seo-vectorslab-glyph-vectorslab-3"
-            />
-            <img
-              width="67"
-              height="67"
-              src="https://img.icons8.com/external-others-nixx-design/67/external-flexbox-icon-web-design-solid-others-nixx-design.png"
-              alt="external-flexbox-icon-web-design-solid-others-nixx-design"
+              width="55"
+              height="55"
+              src="images/responsive.svg"
+              alt="responsive"
             />
             <img
               width="50"
               height="50"
-              src="https://img.icons8.com/ios/50/grid.png"
-              alt="grid"
+              src="images/flexbox.png"
+              alt="flexbox"
             />
-            <img
-              width="64"
-              height="64"
-              src="https://img.icons8.com/pastel-glyph/64/web-interface--v1.png"
-              alt="web-interface--v1"
-            />
+            <img width="50" height="50" src="images/grid.svg" alt="grid" />
+            <img width="60" height="60" src="images/ui-design.svg" alt="ui" />
           </div>
         </div>
 
@@ -155,12 +130,7 @@
           <p>Visual Studio Code</p>
           <p>Webpack</p>
           <div class="image-container">
-            <img
-              width="50"
-              height="50"
-              src="https://img.icons8.com/ios-filled/50/git.png"
-              alt="git"
-            />
+            <img width="50" height="50" src="images/git.svg" alt="git" />
             <img
               width="50"
               height="50"
@@ -191,13 +161,16 @@
     </section>
 
     <section class="portfolio" id="portfolio">
-      <h2 class="heading">Latest <span>Project</span></h2>
+      <h2 class="heading">Latest <span>Projects</span></h2>
 
       <div class="portfolio-container">
         <div class="portfolio-box">
           <img src="images/portfolio1.PNG" alt="portfolio picture 1" />
           <div class="portfolio-layer">
-            <p>Explain</p>
+            <h4>To-do List Application</h4>
+            <p>Compiled with Webpack</p>
+            <p>Including localStorage API</p>
+            <p>Made with ES6 modules</p>
             <a href="#"><i class="bx bx-link-external"></i></a>
           </div>
         </div>
@@ -205,7 +178,8 @@
         <div class="portfolio-box">
           <img src="images/portfolio2.PNG" alt="portfolio picture 1" />
           <div class="portfolio-layer">
-            <p>Explain</p>
+            <h4>Library Application</h4>
+            <p>Store, and track book objects inside a library collection</p>
             <a href="#"><i class="bx bx-link-external"></i></a>
           </div>
         </div>
@@ -213,7 +187,8 @@
         <div class="portfolio-box">
           <img src="images/portfolio3.PNG" alt="portfolio picture 1" />
           <div class="portfolio-layer">
-            <p>Explain</p>
+            <h4>Two player tic-tac-toe game</h4>
+            <p>Play against friends in a classic game</p>
             <a href="#"><i class="bx bx-link-external"></i></a>
           </div>
         </div>
@@ -221,7 +196,8 @@
         <div class="portfolio-box">
           <img src="images/portfolio4.PNG" alt="portfolio picture 1" />
           <div class="portfolio-layer">
-            <p>Explain</p>
+            <h4>Calculator Application</h4>
+            <p>Capable of addition, subtraction, multiplication, division</p>
             <a href="#"><i class="bx bx-link-external"></i></a>
           </div>
         </div>
@@ -229,11 +205,35 @@
         <div class="portfolio-box">
           <img src="images/portfolio5.PNG" alt="portfolio picture 1" />
           <div class="portfolio-layer">
-            <p>Explain</p>
+            <h4>Etch-a-Sketch Application</h4>
+            <p>Create your own grid and pixel pictures</p>
             <a href="#"><i class="bx bx-link-external"></i></a>
           </div>
         </div>
       </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Information</span></h2>
+
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Full Name" />
+          <input type="email" placeholder="Email Address" />
+        </div>
+        <div class="input-box">
+          <input type="number" placeholder="Phone Number" />
+          <input type="text" placeholder="Subject" />
+        </div>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+        ></textarea>
+        <input type="submit" value="Send Message" class="button" />
+      </form>
     </section>
   </body>
 </html>
