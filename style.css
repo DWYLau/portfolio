@@ -46,6 +46,10 @@ section {
   z-index: 100;
 }
 
+.header.sticky {
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+}
+
 .logo {
   font-size: 3.5rem;
   color: var(--text-color);
@@ -99,7 +103,7 @@ span {
 .home-img img {
   border-radius: 15%;
   margin-left: 2rem;
-  height: 470px;
+  height: 500px;
   width: 320px;
 }
 
@@ -369,4 +373,31 @@ ul li {
 .contact form .button {
   margin-top: 2rem;
   cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 9%;
+  background: var(--second-bg-color);
+}
+
+.footer-text p {
+  font-size: 2.2rem;
+}
+
+.footer-iconTop a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  background-color: var(--main-color);
+  border-radius: 0.8rem;
+}
+
+.footer-iconTop a i {
+  font-size: 2.5rem;
+  color: var(--second-bg-color);
 }
