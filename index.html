@@ -19,7 +19,7 @@
       <nav class="navbar">
         <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
-        <a href="#services">Services</a>
+        <a href="#services">Skills</a>
         <a href="#portfolio">Portfolio</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -33,13 +33,9 @@
         <p>Aspiring frontend developer located in Yokohama, Japan.</p>
         <p>Currently learning:</p>
         <ul>
-          <li>APIs</li>
-        </ul>
-        <p>Planning to learn:</p>
-        <ul>
-          <li>TypeScript</li>
           <li>React</li>
         </ul>
+
         <div class="social-media">
           <a
             href="https://www.linkedin.com/in/derek-lau-74495ba3/"
@@ -80,26 +76,40 @@
     </section>
 
     <section class="services" id="services">
-      <h2 class="heading">Our <span>Services</span></h2>
+      <h2 class="heading">Skills & <span>Technologies</span></h2>
 
       <div class="services-container">
         <div class="services-box">
           <i class="bx bx-code-alt"></i>
           <h3>Web Development</h3>
           <p>HTML5</p>
-          <p>CSS</p>
+          <p>CSS3</p>
+          <p>Tailwind CSS</p>
           <p>JavaScript</p>
-          <p>Ruby</p>
+          <p>TypeScript</p>
+          <p>React.js</p>
           <div class="image-container">
             <img width="50" height="50" src="images/html5.svg" alt="html5" />
             <img width="50" height="50" src="images/css3.svg" alt="css3" />
             <img
               width="50"
               height="50"
+              src="images/tailwind-css.svg"
+              alt="tailwind"
+            />
+            <img
+              width="50"
+              height="50"
               src="images/javascript.svg"
               alt="javascript"
             />
-            <img width="50" height="50" src="images/ruby.svg" alt="ruby" />
+            <img
+              width="50"
+              height="50"
+              src="images/typescript.svg"
+              alt="typescript"
+            />
+            <img width="50" height="50" src="images/react.svg" alt="react" />
           </div>
         </div>
 
@@ -110,6 +120,8 @@
           <p>Flexbox</p>
           <p>CSS Grid</p>
           <p>UI Interaction</p>
+          <p>API Manipulation</p>
+          <p>Test Driven Development</p>
           <div class="image-container">
             <img
               width="55"
@@ -133,8 +145,10 @@
           <h3>Tools</h3>
           <p>Git</p>
           <p>Github</p>
+          <p>Jest</p>
           <p>Linux</p>
           <p>Visual Studio Code</p>
+          <p>Vite</p>
           <p>Webpack</p>
           <div class="image-container">
             <img width="50" height="50" src="images/git.svg" alt="git" />
@@ -151,9 +165,10 @@
               src="images/visual-studio-code.svg"
               alt="visual-studio"
             />
+            <img width="50" height="50" src="images/vite.svg" alt="vite" />
             <img
-              width="48"
-              height="48"
+              width="50"
+              height="50"
               src="images/webpack.svg"
               alt="webpack"
             />
@@ -166,61 +181,126 @@
       <h2 class="heading">Latest <span>Projects</span></h2>
 
       <div class="portfolio-container">
-        <div class="portfolio-box">
-          <img src="images/portfolio1.PNG" alt="portfolio picture 1" />
-          <div class="portfolio-layer">
-            <h4>To-do List Application</h4>
-            <p>Compiled with Webpack</p>
-            <p>Including localStorage API</p>
-            <p>Made with ES6 modules</p>
-            <a href="https://dwylau.github.io/todo-list/" target="_blank"
-              ><i class="bx bx-link-external"></i
-            ></a>
+        <div class="portfolio-left">
+          <img src="images/memory-cards.png" alt="memory-cards" />
+        </div>
+        <div class="portfolio-right">
+          <h3>Premier League Memory Cards</h3>
+          <p>
+            Single page game inspired by a football-centric theme and the
+            Premier League.
+          </p>
+          <p>
+            Front-end technologies including React, TypeScript and Tailwind CSS.
+          </p>
+          <div class="links-container">
+            <a
+              href="https://ephemeral-valkyrie-b30c60.netlify.app/"
+              target="_blank"
+              class="preview-button"
+              >Live Preview</a
+            >
+            <a
+              class="link"
+              href="https://github.com/DWYLau/premier-league-memory-card"
+              target="_blank"
+              ><img src="images/github.svg" alt="github"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio-2" id="portfolio">
+      <div class="portfolio-container-alt">
+        <div class="portfolio-left-alt">
+          <h3>CV Maker Application</h3>
+          <p>Single page CV maker application.</p>
+          <p>
+            Users can enter and submit information to create the perfect resume!
+          </p>
+          <p>Front-end designed using React, TypeScript, CSS3.</p>
+          <div class="links-container">
+            <a
+              href="https://unique-basbousa-54b7ca.netlify.app/"
+              target="_blank"
+              class="preview-button"
+              >Live Preview</a
+            >
+            <a
+              class="link"
+              href="https://github.com/DWYLau/cv-application"
+              target="_blank"
+              ><img src="images/github.svg" alt="github"
+            /></a>
           </div>
         </div>
 
-        <div class="portfolio-box">
-          <img src="images/portfolio2.PNG" alt="portfolio picture 1" />
-          <div class="portfolio-layer">
-            <h4>Library Application</h4>
-            <p>Store, and track book objects inside a library collection</p>
-            <a href="https://dwylau.github.io/library/" target="_blank"
-              ><i class="bx bx-link-external"></i
-            ></a>
+        <div class="portfolio-right-alt">
+          <img src="images/cv-maker.png" alt="cv-maker" />
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio-3" id="portfolio">
+      <div class="portfolio-container">
+        <div class="portfolio-left">
+          <img src="images/weather-application.png" alt="weather-app" />
+        </div>
+        <div class="portfolio-right">
+          <h3>Weather Application</h3>
+          <p>Single page weather application.</p>
+          <p>
+            Users can input and search their favourite locations for weather
+            conditions!
+          </p>
+          <p>Front-end developed using HTML5, CSS3 and TypeScript.</p>
+          <div class="links-container">
+            <a
+              href="https://dwylau.github.io/weather-app-ts/"
+              target="_blank"
+              class="preview-button"
+              >Live Preview</a
+            >
+            <a
+              class="link"
+              href="https://github.com/DWYLau/weather-app-ts"
+              target="_blank"
+              ><img src="images/github.svg" alt="github"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio-4" id="portfolio">
+      <div class="portfolio-container-alt">
+        <div class="portfolio-left-alt">
+          <h3>To-Do List Application</h3>
+          <p>Single page To-Do List application.</p>
+          <p>
+            Users can generate and store projects and tasks for future
+            reference!
+          </p>
+          <p>Front-end designed using HTML5, CSS3, JavaScript.</p>
+          <div class="links-container">
+            <a
+              href="https://dwylau.github.io/todo-list/"
+              target="_blank"
+              class="preview-button"
+              >Live Preview</a
+            >
+            <a
+              class="link"
+              href="https://github.com/DWYLau/todo-list"
+              target="_blank"
+              ><img src="images/github.svg" alt="github"
+            /></a>
           </div>
         </div>
 
-        <div class="portfolio-box">
-          <img src="images/portfolio3.PNG" alt="portfolio picture 1" />
-          <div class="portfolio-layer">
-            <h4>Tic-Tac-Toe Game</h4>
-            <p>Play against a friend in this classic game</p>
-            <a href="https://dwylau.github.io/tic-tac-toe/" target="_blank"
-              ><i class="bx bx-link-external"></i
-            ></a>
-          </div>
-        </div>
-
-        <div class="portfolio-box">
-          <img src="images/portfolio4.PNG" alt="portfolio picture 1" />
-          <div class="portfolio-layer">
-            <h4>Calculator Application</h4>
-            <p>Capable of addition, subtraction, multiplication, division</p>
-            <a href="https://dwylau.github.io/calculator/" target="_blank"
-              ><i class="bx bx-link-external"></i
-            ></a>
-          </div>
-        </div>
-
-        <div class="portfolio-box">
-          <img src="images/portfolio5.PNG" alt="portfolio picture 1" />
-          <div class="portfolio-layer">
-            <h4>Etch-a-Sketch Application</h4>
-            <p>Create your own grid and pixel pictures</p>
-            <a href="https://dwylau.github.io/etch-a-sketch/" target="_blank"
-              ><i class="bx bx-link-external"></i
-            ></a>
-          </div>
+        <div class="portfolio-right-alt">
+          <img src="images/cv-maker.png" alt="cv-maker" />
         </div>
       </div>
     </section>
@@ -254,13 +334,18 @@
           rows="10"
           placeholder="Your Message"
         ></textarea>
-        <input name="send" type="submit" value="Send Message" class="button" />
+        <input
+          name="send"
+          type="submit"
+          value="Send Message"
+          class="send-button"
+        />
       </form>
     </section>
 
     <footer class="footer">
       <div class="footer-text">
-        <p>Copyright &copy; 2023 Derek Lau</p>
+        <p>Copyright &copy; 2024 Derek Wai Yick Lau</p>
       </div>
 
       <div class="footer-iconTop">
