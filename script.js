@@ -10,14 +10,14 @@ let sections = document.querySelectorAll("section")
 let navLinks = document.querySelectorAll("header nav a")
 
 window.onscroll = () => {
-  sections.forEach(section => {
+  sections.forEach((section) => {
     let top = window.scrollY
     let offset = section.offsetTop - 150
     let height = section.offsetHeight
     let id = section.getAttribute("id")
 
     if (top >= offset && top < offset + height) {
-      navLinks.forEach(link => {
+      navLinks.forEach((link) => {
         link.classList.remove("active")
         document
           .querySelector("header nav a[href*=" + id + "]")
@@ -47,7 +47,7 @@ ScrollReveal().reveal(".home-content p, .home-content ul, .about-content", {
 })
 
 const typed = new Typed(".multiple-text", {
-  strings: ["Frontend Developer", "Designer", "Programmer"],
+  strings: ["Full Stack Developer", "Designer", "Programmer"],
   typeSpeed: 100,
   backSpeed: 100,
   backDelay: 1000,
