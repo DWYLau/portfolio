@@ -201,14 +201,6 @@ ul li {
   background: var(--second-bg-color);
 }
 
-.about-img img {
-  height: auto;
-  width: 100%;
-  max-width: 300px;
-  margin: 2rem;
-  border-radius: 50%;
-}
-
 .heading {
   text-align: center;
   font-size: 6rem;
@@ -255,7 +247,7 @@ ul li {
   border-radius: 2rem;
   text-align: center;
   transition: 0.5s ease;
-  min-height: 65vh;
+  min-height: 75vh;
 }
 
 .services-container .services-box:hover {
@@ -281,7 +273,7 @@ ul li {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5rem;
+  margin-top: 2rem;
   gap: 1.5rem;
 }
 
@@ -300,7 +292,7 @@ ul li {
 
 .portfolio-container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-evenly;
   margin-top: 3rem;
   gap: 2rem;
@@ -331,10 +323,10 @@ ul li {
   align-items: center;
   justify-content: space-evenly;
   text-align: center;
-  height: 40vh;
+  min-height: 45vh;
   width: 550px;
   background: var(--bg-color);
-  margin-top: 3rem;
+  margin-top: 1rem;
   padding: 3rem;
   border: 0.2rem solid var(--second-bg-color);
   border-radius: 2rem;
@@ -382,9 +374,9 @@ a img:hover {
 
 .portfolio-container-alt {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-evenly;
-  margin-top: 3rem;
+  margin-top: 1rem;
   gap: 2rem;
 }
 
@@ -413,10 +405,10 @@ a img:hover {
   align-items: center;
   justify-content: space-evenly;
   text-align: center;
-  height: 40vh;
+  min-height: 45vh;
   width: 550px;
   background: var(--second-bg-color);
-  margin-top: 3rem;
+  margin-top: 1rem;
   padding: 3rem;
   border: 0.2rem solid var(--bg-color);
   border-radius: 2rem;
@@ -429,7 +421,8 @@ a img:hover {
   transform: scale(1.02);
 }
 
-.portfolio-3 {
+.portfolio-3,
+.portfolio-5 {
   background: var(--second-bg-color);
 }
 
@@ -437,8 +430,15 @@ a img:hover {
   background: var(--main-bg-color);
 }
 
+.portfolio-image {
+  height: 43vh;
+  width: 45vw;
+  padding: 0.5rem;
+  margin-top: 2rem;
+}
+
 .contact {
-  background: var(--second-bg-color);
+  background: var(--main-bg-color);
 }
 
 .contact h2 {
@@ -464,7 +464,7 @@ a img:hover {
   padding: 1.5rem;
   font-size: 1.6rem;
   color: var(--text-color);
-  background: var(--bg-color);
+  background: var(--second-bg-color);
   border-radius: 0.8rem;
   margin: 0.7rem 0;
   transition: 0.5s ease;
@@ -483,8 +483,9 @@ a img:hover {
   resize: none;
 }
 
-.contact form .button {
-  margin-top: 2rem;
+.send-button {
+  background: var(--second-bg-color);
+  margin-top: 1rem;
   cursor: pointer;
 }
 
@@ -530,6 +531,10 @@ a img:hover {
 @media (max-width: 1200px) {
   html {
     font-size: 55%;
+  }
+
+  .portfolio-image {
+    width: 60vw;
   }
 }
 
@@ -617,11 +622,43 @@ a img:hover {
   .portfolio h2 {
     margin-bottom: 3rem;
   }
+
+  .portfolio-image {
+    height: 30vh;
+    width: 70vw;
+  }
+
+  .portfolio-container,
+  .portfolio-container-alt {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+
+  .portfolio-container,
+  .portfolio-container-alt {
+    height: 100vh;
+    justify-content: space-evenly;
+  }
+
+  .portfolio-image {
+    height: 28vh;
+    width: 95vw;
+  }
+
+  .portfolio-right,
+  .portfolio-left-alt {
+    width: 400px;
+  }
+
+  .portfolio-right p {
+    font-size: 1.5rem;
   }
 
   .contact form .input-box input {
@@ -630,6 +667,11 @@ a img:hover {
 }
 
 @media (max-width: 365px) {
+  .portfolio-right,
+  .portfolio-left-alt {
+    width: 300px;
+  }
+
   .footer {
     flex-direction: column-reverse;
   }
