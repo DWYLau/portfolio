@@ -648,8 +648,8 @@ a img:hover {
   }
 
   .portfolio-image {
-    height: 28vh;
-    width: 95vw;
+    height: 200px;
+    width: 410px;
   }
 
   .portfolio-right,
@@ -670,6 +670,11 @@ a img:hover {
   .portfolio-right,
   .portfolio-left-alt {
     width: 300px;
+  }
+
+  .portfolio-image {
+    height: 180px;
+    width: 320px;
   }
 
   .footer {
